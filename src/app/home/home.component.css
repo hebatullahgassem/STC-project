@@ -1,0 +1,771 @@
+.navbar.navbar-expand-lg.bg-light{
+  height: 4rem;
+}
+.container-fluid{
+  background-color: #4f008c;
+  border-radius: 0;
+  right: 0;
+} 
+.navbar-brand{
+  margin-bottom: 5px;
+  width: 5rem;
+  height: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.nav-link{
+  cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8pc;
+  font-weight: 500;
+  margin: auto;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 10px;
+}
+.nav-link.active{
+  cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8pc;
+  font-weight: 500;
+  margin: auto;
+  text-decoration: none;
+  margin-left: 3rem;
+  margin-right: 10px;
+}
+.nav-item-login{
+  margin-top: 0.3rem;
+}
+.nav-link-login{
+  cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 45rem;
+}
+.btn{
+  margin: auto;
+  margin-right: 10px;
+}
+.navbar{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.navbar-toggler, .navbar-toggler-icon{
+  color: white;
+  background-color: white;
+}
+
+
+
+
+.container {
+  margin-left: 3pc;
+  margin-right: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.dcp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-dcp {
+  margin-top: 5pc;
+}
+
+.dcp-img {
+  margin-top: 3pc;
+  width: 35pc;
+  height: 39pc;
+}
+
+.dcp-head {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  font-size: 3.5pc;
+  color: #1d1d1d;
+}
+
+.stc-span {
+  color: #4f008c;
+  font-weight: 800;
+}
+
+.para-1 {
+  margin-top: 2pc;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.2pc;
+  line-height: 15px;
+  color: #252627;
+}
+
+.para-2 {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.2pc;
+  line-height: 15px;
+  color: #252627;
+}
+
+.bold-para {
+  font-family: 'Arimo', sans-serif;
+  font-weight: 800;
+  color: #1d1d1d;
+  font-size: 1.2pc;
+  margin-top: 4pc;
+  margin-bottom: 2pc;
+}
+
+.pink-btn {
+  background-color: #ff375e;
+  border: none;
+  color: white;
+  padding: 1pc 3.7pc;
+  font-size: 0.7pc;
+  font-weight: 700;
+}
+
+.pink-btn2 {
+  background-color: #ff375e;
+  border: none;
+  color: white;
+  padding: 1pc 3.7pc;
+  font-size: 0.7pc;
+  font-weight: 700;
+}
+
+
+.up-join {
+  margin-top: 5pc;
+}
+
+.down-join {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6pc;
+}
+
+.join-card {
+  width: 20pc;
+}
+
+.join-h1 {
+  color: #4f008c;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  font-size: 3.7pc;
+}
+
+.span-num {
+  font-family: 'Kanit', sans-serif;
+  color: #ff375e;
+  font-size: 1.8pc;
+  font-weight: 800;
+  margin-right: 0.5pc;
+}
+
+.card-num {
+  display: flex;
+}
+
+.join-para-up {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.2pc;
+  width: 26pc;
+  font-weight: 500;
+  margin-top: 1.5pc;
+  line-height: 2pc;
+}
+
+.card-head {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 1.2pc;
+  padding-left: 2.5pc;
+}
+
+.card-p {
+  font-family: 'Arimo', sans-serif;
+  font-size: 0.9pc;
+  font-weight: 500;
+  width: 14.4pc;
+  padding-left: 2.5pc;
+}
+
+.card-hint {
+  font-family: 'Arimo', sans-serif;
+  color: #b0b4b6;
+  font-size: 0.8pc;
+  font-style: italic;
+  margin-top: 1.5pc;
+  padding-left: 2.5pc;
+  width: 14.4pc;
+}
+
+.here {
+  color: #ff5072;
+  font-weight: bold;
+}
+
+
+.ambassador-up {
+  margin-top: 10pc;
+}
+
+.amb-head {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 3.5pc;
+  width: 40pc;
+  line-height: 70px;
+}
+
+.ambassador-down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5pc;
+}
+
+.amb-img {
+  margin-left: 2pc;
+}
+
+.amb-p {
+  margin-top: 1.8pc;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1pc;
+  font-weight: 500;
+  text-align: center;
+  width: 15pc;
+}
+
+.card-amb {
+  margin-left: 15pc;
+}
+
+
+.monitor {
+  display: flex;
+  margin-top: 10pc;
+}
+
+.monitor-head {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 3.5pc;
+  width: 28pc;
+  line-height: 70px;
+  letter-spacing: 0.2pc;
+}
+
+.monitor-p {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.3pc;
+  font-weight: 500;
+  width: 30pc;
+}
+
+.monitor-img {
+  margin-top: 5pc;
+  width: 48pc;
+}
+
+.community {
+  display: flex;
+  background-color: #4f008c;
+  margin-top: 10pc;
+}
+
+.left-comm {
+  margin-top: 4pc;
+  margin-left: 4pc;
+  margin-bottom: 17pc;
+}
+
+.comm-head {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 3.5pc;
+  color: white;
+}
+
+.comm-p1 {
+  color: white;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.1pc;
+  font-weight: 200;
+  width: 24pc;
+  margin-top: 2pc;
+  line-height: 2pc;
+}
+
+.comm-p2 {
+  color: white;
+  font-family: 'Arimo', sans-serif;
+  font-size: 1pc;
+  font-weight: 500;
+  margin-top: 4pc;
+  margin-bottom: 1.8pc;
+}
+
+.p-comm {
+  font-style: italic;
+  font-family: 'Arimo', sans-serif;
+  font-weight: lighter;
+  font-size: 0.8pc;
+  line-height: 1.5pc;
+  width: 12pc;
+  margin-top: 2pc;
+  margin-left: 1pc;
+  margin-bottom: 6pc;
+}
+
+.p-comm3 {
+  font-style: italic;
+  font-family: 'Arimo', sans-serif;
+  font-weight: lighter;
+  font-size: 0.8pc;
+  line-height: 1.5pc;
+  width: 12pc;
+  margin-top: 2pc;
+  margin-left: 1pc;
+  margin-bottom: 3.3pc;
+}
+
+.img-comm {
+  margin-left: 1pc;
+  margin-bottom: 0.5pc;
+}
+
+.p-comm2 {
+  font-style: italic;
+  font-family: 'Arimo', sans-serif;
+  font-weight: lighter;
+  font-size: 0.8pc;
+  margin-left: 1pc;
+}
+
+.card1 {
+  color: white;
+  background-color: #00c48c;
+  height: 19pc;
+  width: calc(100%/3);
+}
+
+.card2 {
+  color: white;
+  background-color: #1d252d;
+  width: calc(100%/3);
+}
+
+.card3 {
+  color: white;
+  background-color: #1cced8;
+  width: calc(100%/3);
+}
+
+.cards-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-control-next {
+  background-color: #4f008c;
+  border: 0.15pc solid white;
+  right: 34.3rem;
+}
+
+.carousel-control-prev {
+  background-color: #4f008c;
+  border: 0.15pc solid white;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 104%;
+  color: white;
+  height: 2pc;
+  width: 2pc;
+}
+
+.margin-top-custom{
+  margin-top: 15rem;
+  width: 40rem;
+}
+
+
+
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.left-foot{
+  margin-top: 1.5pc;
+  margin-bottom: 1.5pc;
+  font-weight: 500;
+}
+.footp1{
+  cursor: pointer;
+  text-decoration: none;
+  color: #1d252d;
+  font-family: 'Arimo', sans-serif;
+  font-size: 0.8pc;
+  margin-left: 2pc;
+}
+.footp2{
+  cursor: pointer;
+  text-decoration: none;
+  color: #1d252d;
+  font-family: 'Arimo', sans-serif;
+  font-size: 0.8pc;
+  margin-left: 1pc;
+}
+.right-foot{
+margin-top: 1.5pc;
+margin-bottom: 1pc;
+}
+.face{
+  width: 1.2pc;
+  margin-right: 1.2pc;
+}
+.tweet{
+  width: 1.2pc;
+  margin-right: 1.2pc;
+}
+.insta{
+  width: 1.2pc;
+  margin-right: 1.2pc;
+}
+.youtube{
+  width: 1.2pc;
+  margin-right: 1.3pc;
+}
+
+
+@media screen and (max-width: 560px) {
+
+  .navbar.navbar-expand-lg.bg-light{
+    height: 3rem;
+  }
+  .nav-item{
+    margin-left: 5rem;
+    width: 100%;
+  }
+  .nav-link.active{
+    margin-left: 1rem;
+  }
+  .nav-link, .nav-link.active, .nav-link-login{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .nav-item-login{
+    margin-top: 2rem;
+  }
+  .nav-link-login{
+    margin-left: 7rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .navbar-brand{
+    width: 6rem;
+    height: 4rem;
+  }
+  .container-fluid{
+    width: 100%;
+  }
+
+
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dcp {
+    display: block;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .dcp-head {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .para-1 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .para-2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .bold-para {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .pink-btn {
+    font-size: 0.8rem;
+    margin-left: 3.4rem;
+  }
+
+  .dcp-img {
+    width: 100%;
+    height: 25rem;
+  }
+
+
+
+  .join {
+    margin-top: 10rem;
+  }
+
+  .up-join {
+    width: 100%;
+  }
+
+  .join-h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .join-para-up {
+    font-size: 1.3rem;
+    width: 100%;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .down-join {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .card-num {
+    height: 5rem;
+    margin-left: 6rem;
+  }
+
+  .card-head {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .join-img {
+    height: 5rem;
+  }
+
+  .join-card {
+    margin-bottom: 3rem;
+  }
+
+  .card-p {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .card-hint {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+
+
+  .ambassador {
+    margin-top: 10rem;
+  }
+
+  .amb-head {
+    font-size: 2rem;
+    width: 100%;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .ambassador-down {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .amb-img {
+    height: 10rem;
+    margin-left: 5rem;
+  }
+
+  .amb-p {
+    font-size: 1.3rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+  }
+
+  .card-amb,
+  .card-amb1 {
+    margin-left: 0.5rem;
+  }
+
+
+
+  .monitor {
+    display: block;
+    margin-top: 10rem;
+  }
+
+  .monitor-head {
+    font-size: 2rem;
+    width: 100%;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .monitor-p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .monitor-img {
+    margin-top: 2rem;
+    width: 100%;
+    height: 15rem;
+  }
+
+
+
+
+
+  .community {
+    display: block;
+    margin-top: 10rem;
+    width: 100%;
+    height: 100rem;
+    padding-top: 1rem;
+  }
+
+  .left-comm {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .comm-head {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .comm-p1,
+  .comm-p2 {
+    font-size: 1.5rem;
+    width: 100%;
+    line-height: 1.8rem;
+  }
+
+  .pink-btn2 {
+    font-size: 0.8rem;
+  }
+
+  .cards-wrapper {
+    display: block;
+  }
+
+  .card1 {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: 19rem;
+  }
+
+  .card2 {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: 18rem;
+  }
+
+  .card3 {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: 18rem;
+  }
+
+  .p-comm,
+  .p-comm2,
+  .p-comm3 {
+    font-size: 1rem;
+    width: 90%;
+    line-height: 1.3rem;
+  }
+  .img-comm {
+    height: 3rem;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 102%;
+    height: 2rem;
+  }
+  .carousel-control-next{
+    right: 9.4rem;
+  }
+  .carousel-control-prev{
+    left: 9.4rem;
+  }
+  .margin-top-custom{
+  width: 100%;
+  margin-top: 10rem;
+}
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    height: 3rem;
+  }
+
+
+
+
+  .footer{
+    display: block;
+    width: 100%;
+  }
+  .left-foot{
+    display: flex;
+  }
+  .footp1{
+    font-size: 1rem;
+    margin-left: 3rem;
+  }
+  .footp2{
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .right-foot{
+    margin-left: 3rem;
+    width: 87%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .face, .insta, .tweet{
+    margin-right: 4rem;
+  }
+}

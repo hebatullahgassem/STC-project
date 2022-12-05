@@ -1,0 +1,158 @@
+<nav class="navbar navbar-expand-lg bg-light">  
+  <div class="container-fluid">    
+    <img class="navbar-brand" src="../assets/img/logo-rest.png" alt="logo"> 
+    <div class="right-nav">
+      <img class="bell" src="../assets/img/bell.png">
+      <h1 class="user">{{employee.userName}}</h1>
+      <span><img class="arrow" src="../assets/img/account.png"></span><img class="user-pic" src={{employee.img}}>
+    </div>      
+  </div>
+</nav>
+
+<div class="bodyy">
+  <div class="body">
+    <div class="sidenav">
+      <div class="widtho">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                  <li class="dashboard">
+                      <a class="nav-link align-middle px-0">
+                            <img class="icon" src="../assets/img/dashboard2.png"><span class="ms-1 d-none d-sm-inline m">My Dashboard</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <img class="icon" src="../assets/img/customers.png"><span class="ms-1 d-none d-sm-inline">My Customers</span> 
+                      </a>
+                  </li>
+                  <li>
+                      <a class="nav-link px-0 align-middle">
+                            <img class="icon" src="../assets/img/community.png"><span class="ms-1 d-none d-sm-inline">Community</span>
+                      </a>
+                  </li>
+                  <li>
+                    <a class="nav-link px-0 align-middle">
+                           <img class="icon" src="../assets/img/leaderboard.png"><span class="ms-1 d-none d-sm-inline">Leaderboard</span>
+                    </a>
+                </li>
+                <li>
+                  <a class="nav-link px-0 align-middle">
+                           <img class="icon" src="../assets/img/service.png"><span class="ms-1 d-none d-sm-inline">Services & Polices</span>
+                  </a>
+              </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+  <div class="right-body">
+    <div class="head">
+      <div class="left-head">
+        <div>
+          <img class="imgo" src="{{employee.img}}">
+        </div>
+        <div>
+          <h1 class="hed">Welcome,</h1>
+          <h3 class="nam">{{employee.fullName}}</h3>
+          <div class="titles">
+            <p class="tit">Craftsman</p>
+            <p class="tit">Most Human Ambassador Quarter 2 2020</p>
+          </div>
+          <p class="titt">Most Active Ambassador April 2020</p>
+        </div>
+      </div>
+
+      <div class="right-head">
+        <button class="quit">QUIT DIGITAL PLATFORM</button>
+        <div class="center">
+          <div class="center-right">
+            <img class="badg" src="{{employee.badge}}">
+            <div class="talk">
+              <h4 class="craft">Craftsman</h4>
+              <p class="par">Gained this badge by collecting more than 100 points</p>
+            </div>
+          </div>
+          <a class="points" (click)="onPoints()">POINTS AND RULES</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-body">
+      <div class="leftt">
+        <div class="top">
+          <h2 class="hhh">Recent Updates</h2>
+          <button class="btn-filter"><img class="filter" src="../assets/img/filter.png"> Filter</button>
+        </div>
+        <div class="bordery1">
+        <p class="one"><span class="boldy">{{employee.name1}}</span> have added an answer for your question in ticket <span>{{employee.ticket}}</span> in the community.</p>
+        <a class="anchor">VIEW THE ANSWER</a>
+        </div>
+        <div class="bordery2">
+        <p class="one"><span class="boldy">{{employee.name2}}</span> have marked complaints <span>{{employee.complaints}}</span> as resolved.</p>
+        <a class="anchor">INFORM CUSTOMER</a>
+        </div>
+        <div class="bordery3">
+        <p class="one">stc have launched a new service <span class="boldy">{{employee.newService}}</span></p>
+        <a class="anchor">CHECK THE DETAILS</a>
+        </div>
+      </div>
+
+      <div class="rightt">
+        <div class="oneTwo">
+          <div class="cardo">
+            <div class="flexy">
+              <p class="ppp">Un-redeemed Points</p>
+              <img class="logo1" src="../assets/img/redeeming-logo.png">
+            </div>
+            <h1 class="num">561</h1>
+            <a class="linky" (click)="onRedeem()">REDEEMING POLICY</a>
+          </div>
+          <div class="cardo">
+            <div class="flexy">
+              <p class="ppp">In progress Complaints</p>
+              <img class="logo2" src="../assets/img/complaints-logo.png">
+            </div>
+            <h1 class="num">2</h1>
+            <a class="linky" (click)="onComplaints()">LIST ALL COMPLAINTS</a>
+          </div>
+        </div>
+        <div class="cardo">
+          <div class="flexy">
+            <p class="ppp">Unanswered questions</p>
+            <img class="logo3" src="../assets/img/community-logo.png">
+          </div>
+          <h1 class="num">12</h1>
+          <a class="linky">COMMUNITY</a>
+        </div>
+      </div>
+    </div> 
+
+    <div class="performance">
+      <h1 class="headd">Performance Statistics</h1>
+      <div class="graphes">
+        <div class="complaints">
+          <h3 class="comp-head">Customer's Complains</h3>
+  <!-- <ngx-charts-bar-vertical-2d
+    [view]="[500,300]"
+    [results]="complainsData"
+    [scheme]="'yellow'"
+    [xAxisLabel]="'Month'"
+    [yAxisLabel]="'Nums'"
+    [legend]="false"
+    [showXAxisLabel]="false"
+    [showYAxisLabel]="false"
+    [xAxis]="false"
+    [yAxis]="true"
+    [gradient]="false">
+</ngx-charts-bar-vertical-2d> -->
+        </div>
+  
+        <div class="customers">
+          <h3 class="cust-head">Number of Customers</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+    </div>

@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg bg-light">  
+  <div class="container-fluid">    
+    <img class="navbar-brand" src="./assets/img/logo-rest.png" alt="logo">       
+  </div>
+</nav>
+
+<div class="page-body">
+
+  <div>
+  <div class="header">
+    <h1 class="bold-p">Hi !</h1>
+    <h1 class="bold-p">Wellcome back.</h1>
+  </div>
+  
+  <div class="login-form">
+    <div class="vh-100 d-flex">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-12 col-md-8 col-lg-6">
+                <form [formGroup]="loginForm" (ngSubmit)="onLogIn()">
+                  <h4 class="label">Log In</h4>
+                  <div class="invalid" *ngIf="userInvalid === true">Invalid username or password!</div>
+                  <div>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter your stc email address">
+                    </div>
+                    <div class="mb-3">
+                      <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password">
+                    </div>
+                    <div class="d-grid">
+                      <button class="login-button" type="submit" [disabled]="loginForm.untouched? true : false">LOG IN</button>
+                    </div>
+                  </div>
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="card">
+      <div class="card-head">What's in it for you?</div>
+      <p class="bold-text">Rewards, Points and Discounts</p>
+      <p class="p">Get more points by helping customers, reporting issues, answering other ambassadors questions on the community and solve quizzes.</p>
+      <div class="buttons">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">prev</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">next</span>
+        </button>
+      </div>
+</div>
+
+</div>

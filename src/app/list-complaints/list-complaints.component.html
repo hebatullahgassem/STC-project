@@ -1,0 +1,120 @@
+<nav class="navbar navbar-expand-lg bg-light">  
+  <div class="container-fluid">    
+    <img class="navbar-brand" src="../assets/img/logo-rest.png" alt="logo"> 
+    <div class="right-nav">
+      <img class="bell" src="../assets/img/bell.png">
+      <h1 class="user">{{employee.userName}}</h1>
+      <span><img class="arrow" src="../assets/img/account.png"></span><img class="user-pic" src={{employee.img}}>
+    </div>      
+  </div>
+</nav>
+
+<div class="body">
+  <div class="sidenav">
+        <div class="widtho">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li>
+                        <a class="nav-link align-middle px-0">
+                              <img class="icon" src="../assets/img/dashboard.png"><span class="ms-1 d-none d-sm-inline" (click)="onDashboard()">My Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                              <img class="icon" src="../assets/img/customers.png"><span class="ms-1 d-none d-sm-inline">My Customers</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-0 align-middle">
+                              <img class="icon" src="../assets/img/community.png"><span class="ms-1 d-none d-sm-inline">Community</span>
+                        </a>
+                    </li>
+                    <li>
+                      <a class="nav-link px-0 align-middle">
+                             <img class="icon" src="../assets/img/leaderboard.png"><span class="ms-1 d-none d-sm-inline">Leaderboard</span>
+                      </a>
+                  </li>
+                  <li>
+                    <a class="nav-link px-0 align-middle">
+                             <img class="icon" src="../assets/img/service.png"><span class="ms-1 d-none d-sm-inline">Services & Polices</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle-body">
+      <div class="header">
+        <p class="p-1">MY DASHBOARD</p>
+        <img class="icon2" src="../assets/img/terms-icon.png">
+        <p class="p-2">LIST ALL COMPLAINTS</p>
+      </div>
+      <h1 class="comp">List All Complaint</h1>
+      <p class="exp">Here you can see all the complaints related to your customers.</p>
+      <div class="first">
+        <input class="search" type="text" placeholder="Search by complaint title or ID">
+        <button class="status">Select Status</button>
+        <button class="category">Category</button>
+      </div>
+      <div class="tablee">
+        <table>
+          <tr class="the">
+            <th class="id">ID</th>
+            <th>Complaint</th>
+            <th>Customer</th>
+            <th>Status</th>
+            <th>Raised by</th>
+            <th>Date Modified</th>
+            <th>Actions</th>
+          </tr>
+          <tr class="head">
+            <td class="id">1637</td>
+            <td class="c">CPE DSL (Second Light) status is red</td>
+            <td>Abdullah Alqahtani</td>
+            <td><button class="bt1">Resolved</button></td>
+            <td>Customer</td>
+            <td>1 July 2020</td>
+            <td class="as"><img src="../assets/img/ques.png">Ask Question</td><td class="co"><img src="../assets/img/comm.png">Comment</td>
+          </tr>
+          <tr>
+            <td class="id">3948</td>
+            <td class="c">I have no dial tone issues?</td>
+            <td>Waleed Aljaber</td>
+            <td><button class="bt2">Opened</button></td>
+            <td>You</td>
+            <td>2 July 2020</td>
+            <td class="as"><img src="../assets/img/ques1.png">Ask Question</td><td class="co"><img src="../assets/img/comm1.png">Comment</td>
+          </tr>
+          <tr class="head2">
+            <td class="id">1834</td>
+            <td class="c">Suffer a poor connection when moving inside home?</td>
+            <td>Shahad Shrourou</td>
+            <td><button class="bt2">Opened</button></td>
+            <td>Customer</td>
+            <td>4 July 2020</td>
+            <td class="as"><img src="../assets/img/ques2.png">Ask Question</td><td class="co"><img src="../assets/img/comm2.png">Comment</td>
+          </tr>
+          <tr>
+            <td class="id">1105</td>
+            <td class="c">Suffer from a lack of internet connection at all?</td>
+            <td>Mashael muhawwis</td>
+            <td><button class="bt3">In Progress</button></td>
+            <td>Customer</td>
+            <td>12 July 2020</td>
+            <td class="as"><img src="../assets/img/ques1.png">Ask Question</td><td class="co"><img src="../assets/img/comm1.png">Comment</td>
+          </tr>
+          <tr class="head3">
+            <td class="id">1948</td>
+            <td class="c">Internet Connection Keeps Dropping</td>
+            <td>Ibrahim Bukhari</td>
+            <td><button class="bt4">Closed</button></td>
+            <td>Customer</td>
+            <td>1 July 2020</td>
+            <td class="as"><img src="../assets/img/ques3.png">Ask Question</td><td class="co"><img src="../assets/img/comm3.png">Comment</td>
+          </tr>
+        </table>
+      </div>
+      </div>
+
+    </div>

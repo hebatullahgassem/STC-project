@@ -1,0 +1,264 @@
+.navbar-brand{
+  width: 6rem;
+  height: 4rem;
+}
+
+.navbar.navbar-expand-lg.bg-light{
+  height: 4rem;
+}
+.container-fluid{
+  background-color: white;
+  border-radius: 0;
+  right: 0;
+  border-bottom: 2px solid rgb(231, 229, 229);
+} 
+
+
+.all-body{
+  display: flex;
+}
+.left{
+  width: 75rem;
+  margin-top: 2.5rem;
+}
+.card{
+  border-radius: 0;
+  box-shadow: 0 2px 5px 0 rgba(151, 150, 150, 0.2), 0 3px 10px 0 rgba(134, 133, 133, 0.19);
+  border: none;
+  margin-left: 2.5rem;
+  height: 26rem;
+}
+.head{
+  margin-top: 3.2rem;
+  margin-left: 3rem;
+  display: flex;
+  margin-bottom: 30px;
+}
+.h1{
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.access-check{
+  height: 1rem;
+  border-radius: 20rem;
+  border: 1px solid #00c48c;
+  padding: 1px;
+  margin-top: 0.6rem;
+  margin-left: 0.5rem;
+}
+.body{
+  display: flex;
+  margin-left: 2.5rem;
+}
+.fullName{
+  color: #4f008c;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.title{
+  font-size: 0.8rem;
+  color: rgb(170, 169, 169);
+  font-weight: 500;
+}
+.contacts{
+  display: flex;
+}
+.contacts-icon{
+  height: 1rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.contacts-icon2{
+  height: 0.7rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.control{
+  border: 2px solid black;
+  border-radius: 30px;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  margin-right: 1rem;
+  width: 10.5rem;
+}
+.email{
+  border: 2px solid black;
+  border-radius: 30px;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  width: 12.5rem;
+}
+.phone{
+  border: 2px solid black;
+  border-radius: 30px;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  width: 10rem;
+}
+.button-continue{
+  background-color: #ff375e;
+  border: none;
+  color: white;
+  float: right;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.5rem 1.6rem;
+  margin-right: 3.5rem;
+  margin-top: 2rem;
+}
+.info{
+  margin-top: 1.5rem;
+}
+
+
+.pp{
+  height: 7rem;
+}
+
+
+
+.right{
+  width: 30rem;
+}
+
+.card2{
+  padding-top: 0.5rem;
+  margin-right: 5rem;
+  height: 26rem;
+  background-color: #4f008c;
+  border-radius: 0;
+  border: none;
+  width: 23rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+}
+.card-head{
+  margin-top: 3rem;
+  margin-right: 1rem;
+  background-color: #ff375e;
+  color: white;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  padding-left: 2rem;
+  width: 18.5rem;
+  margin-bottom: 1rem;
+  border-right: 2.4rem solid #00c48c;
+}
+.bold-text{
+  color: white;
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+  font-weight: 600;
+}
+.p{
+  color: white;
+  margin-left: 2rem;
+  width: 16rem;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.carousel-control-next {
+  background-color: #4f008c;
+  border: 0.15pc solid white;
+  right: 21rem;
+}
+
+.carousel-control-prev {
+  background-color: #4f008c;
+  border: 0.15pc solid white;
+  left: 60rem;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 70%;
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+
+@media screen and (max-width: 560px) {
+  .all-body{
+    display: block;
+  }
+  .body{
+    display: block;
+  }
+  .button-continue{
+    float: left;
+    margin-left: 8rem;
+  }
+  .card{
+    height: 40rem;
+    margin-left: 0;
+  }
+  .right,.card2{
+    width: 100%;
+    margin-left: 0;
+  }
+  .card2{
+    height: 20rem;
+    margin-top: 8rem;
+    text-align: center;
+  }
+  .bold-text{
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .p{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    text-align: justify;
+  }
+  .left{
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .carousel-control-next {
+    right: 9rem;
+  }
+  
+  .carousel-control-prev {
+    left: 10rem;
+  }
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 167%;
+}
+.head{
+  margin-left: 2rem;
+}
+.h1{
+  font-size: 1.1rem;
+  width: 18rem;
+  margin-right: 0;
+  margin-bottom: 2rem;
+}
+.access-check{
+  margin-top: 0.2rem;
+}
+.profile-pic{
+  margin-left: 5.5rem;
+}
+.title{
+  margin-left: 1.1rem;
+}
+.contacts{
+  display: block;
+  margin-left: 3rem;
+}
+.phone{
+  margin-left: 3rem;
+}
+}

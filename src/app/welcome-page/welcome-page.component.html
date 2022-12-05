@@ -1,0 +1,143 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <img class="navbar-brand" src="../assets/img/logo-rest.png" alt="logo">
+    <div class="right-nav">
+      <img class="bell" src="../assets/img/bell.png">
+      <h1 class="user">{{employee.userName}}</h1>
+      <span><img class="arrow" src="../assets/img/account.png"></span><img class="user-pic" src={{employee.img}}>
+    </div>
+  </div>
+</nav>
+
+<div class="body">
+  <div class="sidenav">
+    <div class="widtho">
+      <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+          <li>
+            <a class="nav-link align-middle px-0">
+              <img class="icon" src="../assets/img/dashboard.png"><span class="ms-1 d-none d-sm-inline"
+                (click)="onDashboard()">My Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+              <img class="icon" src="../assets/img/customers.png"><span class="ms-1 d-none d-sm-inline">My
+                Customers</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link px-0 align-middle">
+              <img class="icon" src="../assets/img/community.png"><span class="ms-1 d-none d-sm-inline">Community</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link px-0 align-middle">
+              <img class="icon" src="../assets/img/leaderboard.png"><span
+                class="ms-1 d-none d-sm-inline">Leaderboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-link px-0 align-middle">
+              <img class="icon" src="../assets/img/service.png"><span class="ms-1 d-none d-sm-inline">Services &
+                Polices</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-side-body">
+    <div class="header">
+      <div class="left">
+        <img class="celebrate" src="../assets/img/celebrate.png">
+      </div>
+      <div class="middle">
+        <h1 class="header-head">Welcome<span> {{employee.welcome}}</span> !</h1>
+        <p class="header-p">Now you become an stc Ambassador. you can start your job by accepting. Terms & Sign the NDA.
+        </p>
+      </div>
+      <div class="right">
+        <p class="right-up">New Badge Unlocked</p>
+        <img class="badge" src="../assets/img/badge.png">
+        <p class="right-down">Apprentice</p>
+      </div>
+    </div>
+
+    <div class="below-header">
+      <div class="up-body">
+ <div [ngSwitch]="isSignedNda">       
+        <div class="card" id="card" *ngSwitchCase="false">
+          <div class="first">
+            <h1 class="num">1</h1>
+            <div>
+              <h1 class="hedo">Accept Terms & Sign the NDA</h1>
+              <p class="peo">Read and accept the community terms and sign the NDA to know what is your rights and how to
+                protect customers' information</p>
+            </div>
+            <button class="pinko" type="button" (click)="onSign()">READ & SIGN</button>
+          </div>
+        </div>
+
+        <div class="cardos" id="cardos" *ngSwitchCase="true">
+          <div class="first">
+            <h1 class="num">1</h1>
+            <div class="woho">
+              <div>
+                <h1 class="hedoo">Congratulations !</h1>
+                <p class="peoo">You gained 5 points</p>
+                <p class="peo3">by gain sign DNA.</p>
+              </div>
+              <div><img class="wohoo" src="../assets/img/wohoo.png"></div>
+            </div>
+          </div>
+        </div>
+</div>
+<div [ngSwitch]="isSignedNda">  
+        <div class="card2" *ngSwitchCase="true">
+          <div class="first2">
+            <h1 class="num2">2</h1>
+            <div>
+              <h1 class="hedo2">Start inviting your family & friends</h1>
+              <p class="peo2">You will get 5 points for each customer you invite</p>
+            </div>
+            <button class="pinko2" type="button" [disabled]="disabledCard">INVITE</button>
+          </div>
+        </div>
+
+        <div class="diableCard" *ngSwitchCase="false">
+          <div class="first2">
+            <h1 class="num2">2</h1>
+            <div>
+              <h1 class="hedo2">Start inviting your family & friends</h1>
+              <p class="peo2">You will get 5 points for each customer you invite</p>
+            </div>
+            <button class="pinko2" type="button" [disabled]="disabledCard">INVITE</button>
+          </div>
+        </div>
+</div>
+      </div>
+      <div class="down-body">
+        <div class="card01">
+          <h1 class="h">Gain more knowledge about stc Services and Policies</h1>
+          <p class="p1">Read and accept the community terms and sign the NDA to know what is your rights and how to
+            protect customers' information</p>
+          <a class="links">VISIT THE CATALOGUE</a>
+        </div>
+        <div class="card02">
+          <h1 class="h">Check Digital Community</h1>
+          <p class="p2">The community is the place in which other ambassadors share questions and answers about the
+            issues and information the need.</p>
+          <a class="links2">GO TO COMMUNITY</a>
+        </div>
+        <div class="card03">
+          <h1 class="h">Get inspired by other ambassadors' stories</h1>
+          <p class="p3">Read and accept the community terms and sign the NDA to know what is your rights and how to
+            protect customers' information</p>
+          <a class="links3">READ STORIES</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

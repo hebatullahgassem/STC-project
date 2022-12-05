@@ -1,0 +1,178 @@
+.container{
+  height: 10rem;
+}
+
+.login-button{
+  border: none;
+  background-color: #ff375e;
+  color: white;
+  font-family: 'Arimo', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+  .navbar-brand{
+    width: 6rem;
+    height: 4rem;
+  }
+
+  .navbar.navbar-expand-lg.bg-light{
+    height: 4rem;
+  }
+  .container-fluid{
+    background-color: white;
+    border-radius: 0;
+    right: 0;
+    border-bottom: 2px solid rgb(231, 229, 229);
+  } 
+
+  .bold-p{
+    font-weight: 700;
+  }
+
+  .login-form{
+    margin-top: 10rem;
+    margin-left: 1.5rem;
+    width: 45rem;
+  }
+
+  .header{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    display: inline-block;
+  }
+  .label{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .form-control{
+    border: none;
+    border-radius: 0;
+    border-bottom: 3px solid rgb(172, 171, 171);
+    height: 3rem;
+    background-color: rgb(248, 246, 246);
+    padding-bottom: 1rem;
+  }
+
+  .login-button{
+    margin-top: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .form-control::placeholder{
+    font-size: 0.8rem;
+    word-spacing: 0.1rem;
+    font-weight: 500;
+    color: rgb(160, 158, 158);
+  }
+
+  .page-body{
+    display: flex;
+  }
+
+
+  .card{
+    height: 27rem;
+    background-color: #4f008c;
+    border-radius: 0;
+    border: none;
+    width: 25rem;
+    margin-top: 2.5rem;
+    margin-left: 10.5rem;
+  }
+  .card-head{
+    margin-top: 3rem;
+    margin-right: 1rem;
+    background-color: #ff375e;
+    color: white;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    padding-left: 2rem;
+    width: 18.5rem;
+    margin-bottom: 1rem;
+    border-right: 2.4rem solid #00c48c;
+  }
+  .bold-text{
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-left: 2rem;
+    font-weight: 600;
+  }
+  .p{
+    color: white;
+    margin-left: 2rem;
+    width: 16rem;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .carousel-control-next {
+    background-color: #4f008c;
+    border: 0.15pc solid white;
+    right: 19rem;
+  }
+  
+  .carousel-control-prev {
+    background-color: #4f008c;
+    border: 0.15pc solid white;
+    left: 1.5rem;
+  }
+  
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 90%;
+    color: white;
+    height: 30px;
+    width: 30px;
+  }
+  .invalid{
+    color: red;
+    margin-bottom: 1rem;
+  }
+
+
+
+  @media screen and (max-width: 560px) {
+
+    .header{
+      margin-left: 5rem;
+    }
+    .page-body{
+      display: block;
+    }
+    .login-form{
+      height: 20rem;
+      width: 100%;
+      margin-top: 7rem;
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+    .card{
+      margin-left: 0;
+      width: 100%;
+      margin-top: 1rem;
+      height: 22rem;
+      text-align: center;
+    }  
+    .bold-text{
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+    }
+    .p{
+      margin-top: 1rem;
+      text-align: justify;
+    }
+    
+    .carousel-control-next {
+      right: 10rem;
+    }
+    
+    .carousel-control-prev {
+      left: 9rem;
+    }
+  }

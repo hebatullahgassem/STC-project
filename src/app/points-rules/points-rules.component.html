@@ -1,0 +1,151 @@
+<nav class="navbar navbar-expand-lg bg-light">  
+  <div class="container-fluid">    
+    <img class="navbar-brand" src="../assets/img/logo-rest.png" alt="logo"> 
+    <div class="right-nav">
+      <img class="bell" src="../assets/img/bell.png">
+      <h1 class="user">{{employee.userName}}</h1>
+      <span><img class="arrow" src="../assets/img/account.png"></span><img class="user-pic" src={{employee.img}}>
+    </div>      
+  </div>
+</nav>
+
+<div class="body">
+  <div class="sidenav">
+        <div class="widtho">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                    <li>
+                        <a class="nav-link align-middle px-0">
+                              <img class="icon" src="../assets/img/dashboard.png"><span class="ms-1 d-none d-sm-inline" (click)="onDashboard()">My Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                              <img class="icon" src="../assets/img/customers.png"><span class="ms-1 d-none d-sm-inline">My Customers</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-0 align-middle">
+                              <img class="icon" src="../assets/img/community.png"><span class="ms-1 d-none d-sm-inline">Community</span>
+                        </a>
+                    </li>
+                    <li>
+                      <a class="nav-link px-0 align-middle">
+                             <img class="icon" src="../assets/img/leaderboard.png"><span class="ms-1 d-none d-sm-inline">Leaderboard</span>
+                      </a>
+                  </li>
+                  <li>
+                    <a class="nav-link px-0 align-middle">
+                             <img class="icon" src="../assets/img/service.png"><span class="ms-1 d-none d-sm-inline">Services & Polices</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle-body">
+      <div class="header">
+        <p class="p-1">MY DASHBOARD</p>
+        <img class="icon2" src="../assets/img/terms-icon.png">
+        <p class="p-2">POINTS AND RULES</p>
+      </div>
+
+      <div class="head-right">
+        <h1 class="hh">Points and Rules</h1>
+        <p class="pp">Details of what you can gain by collecting points</p>
+        <div class="tablee">
+          <table class="ttt">
+            <tr class="rrr">
+              <th class="thth">Level</th>
+              <th>Eligible for</th>
+            </tr>
+            <tr>
+              <td class="one"><img src="../assets/img/one.png" class="badgo">Apprentice <br><span class="numb">0 to 100</span></td>
+              <td class="two">Points, Qitaf points, Badge, Leaderboard</td>
+            </tr>
+            <tr>
+              <td class="one"><img src="../assets/img/two.png" class="badgo">Craftsman <br><span class="numb">100 - 1,000pts</span></td>
+              <td class="two">Points, Badge, Leaderboard, Qitaf points, Certificate of Achivement</td>
+            </tr>
+            <tr [ngClass]="{'dis': disable === true}">
+              <td class="one"><img src="../assets/img/three.png" class="badgo">Master <br><span class="numb">1,000 - 5,000pts</span></td>
+              <td class="two">Points, Badge, Leaderboard, Qitaf points, Certificate of Achivement, Easter Eggs, Service Discounts</td>
+            </tr>
+            <tr [ngClass]="{'dis': disable === true}">
+              <td class="one"><img src="../assets/img/four.png" class="badgo">Champion <br><span class="numb">5,000 - 10,000pts</span></td>
+              <td class="two">Points, Badge, Leaderboard, Qitaf points, Certificate of Achivement, Easter Eggs, Service Discounts, Leadership kudos</td>
+            </tr>
+            <tr [ngClass]="{'dis': disable === true}">
+              <td class="one"><img src="../assets/img/five.png" class="badgo">Influencer <br><span class="numb">10,000+</span></td>
+              <td class="two">Points, Badge, Leaderboard, Qitaf points, Certificate of Achivement, Easter Eggs, Service Discounts, Leadership kudos, End of year bonus, Express ticket service</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-body">
+      <h1 class="head-rightt">Activity and Point Conversion</h1>
+      <div class="cardd">
+        <table class="tab">
+          <tr class="headdd">
+            <th class="th">Activity</th>
+            <th class="th2">Points</th>
+          </tr>
+          <tr>
+            <td class="td">Answer Questions</td>
+            <td class="td2">2 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Share Experience</td>
+            <td class="td2">3 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Complete training</td>
+            <td class="td2">5 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Ask questions</td>
+            <td class="td2">5 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Answer quizzes about new services, products & policies</td>
+            <td class="td2">3 pts</td>
+          </tr>
+          <tr>
+            <td class="td">New Customers Joining</td>
+            <td class="td2">1 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Providing Info to Customers</td>
+            <td class="td2">5 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Chatting with customers</td>
+            <td class="td2">1 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Solve problems/Closing complaints</td>
+            <td class="td2">5 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Open complaints</td>
+            <td class="td2">2 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Receive 5 Star Rating</td>
+            <td class="td2">5 pts</td>
+          </tr>
+          <tr>
+            <td class="td">Receive 4 Star Rating</td>
+            <td class="td2">2 pts</td>
+          </tr>
+          <tr>
+            <td class="td">New service sales</td>
+            <td class="td2">10 pts</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    </div>

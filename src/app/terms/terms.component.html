@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-light">  
+  <div class="container-fluid">    
+    <img class="navbar-brand" src="../assets/img/logo-rest.png" alt="logo"> 
+    <div class="right-nav">
+      <img class="bell" src="../assets/img/bell.png">
+      <h1 class="user">{{employee.userName}}</h1>
+      <span><img class="arrow" src="../assets/img/account.png"></span><img class="user-pic" src={{employee.img}}>
+    </div>      
+  </div>
+</nav>
+
+<div class="header">
+  <p class="p-1">MY DASHBOARD</p>
+  <img class="icon" src="../assets/img/terms-icon.png">
+  <p class="p-2">ACCEPT TERMS & SIGN THE NDA</p>
+</div>
+
+<div class="card">
+  <div class="terms">
+    <div class="head">
+      <h1 class="terms-head">Non-Disclosure Agreement</h1>
+      <p class="terms-p">Read and sign NDA for continue to proceed.</p>
+      <h1 class="one-head">1. Confidential</h1>
+      <p class="one">
+Access and use of University-issued devices is a privilege that is granted in connection with an individual's duties to theUniversity. These devices are to be used for conducting University business and/or in furtherance of the educationalmission of the University. Requests for University-paid services require approval by an authorized departmentrepresentative and the Provost's Office. <br> <br>
+Telecommunications will select a small number of approved devices.These devices have been tested for compatibility withthe most common Brown applications and Brown WiFi. Should an end user desire a device/feature/service that is notavailable on one of the approved devices, the end user may present a case for Telecommunications to review the device forconditional approval. In the event the device is not approved and an end user still wants it, the end user will be required tosign a waiver confirming understanding that the University will offer "best effort" support of the devices, University-issueddevices will be configured by CIS and will have active-synch enabled.The University reserves the right to "push" policies tomobile devices and to remotely reset devices. Any attempt to override University policies, i.e., "Jailbreak" a
+University-issued device, or any other action that violates manufacturer's warranty or Brown's agreement with carriers isprohibited.
+      </p>
+      <h1 class="one-head">2. Exclusions</h1>
+      <p class="one">
+Requests for University-paid services require approval by an authorized department representative and the Provost'sOffice.
+These devices have been tested for compatibility with the most common Brown'applications and Brown WiFi.Should anend user desire a device/feature/service that is not available on one of the approved devices,the end user may present acase for Telecommunications to review the device for conditional approval In the event the device is not approved and anend user still wants it,the end user will be required to sign a waiver confirming understanding that the University will offer"best effort" support of the devices.University-issued devices will be configured by CIS and will have active-synchenabled.The University reserves the right to"push"policies to mobile devices and to remotely reset devices,Any attemptto override University policies,i.e.,"Jailbreak" a University-issued device,or any other action that violates manufacturer'swarranty or Brown's agreement with carriers is prohibited.
+      </p>
+      <h1 class="one-head">3. Use</h1>
+      <p class="one">
+Brown applications and Brown WiFi.Should an end user desire a device/feature/service that is not available on one of theapproved devices,the end user may present a case for Telecommunications to review the device for conditional approval. Inthe event the device is not approved and an end user still wants it,the end user will be required to sign a waiver confirmingunderstanding that the University will offer "best effort" support of the devices.University-issued devices will beconfigured by CIS and will have active-synch enabled.The University reserves the right to "push" policies to mobile devicesand to remotely reset devices.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <button (click)="onAccept()" class="terms-button" type="button">ACCEPT AND CONTINUE</button>
+</div>

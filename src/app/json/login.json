@@ -1,0 +1,68 @@
+[
+  {
+    "id":1,
+    "password":"123",
+
+    "email":"naseralmuh@stc.com.sa",
+    "fullName":"Naser Mohammed A Almuhawwis",
+    "title":"Solutions and Technologies Section Manager",
+    "phone":"+966 541 038 810",
+    "control":"Operations Control",
+    "img":"../assets/img/faisal2.png",
+
+    "userName":"Naser Mohammed",
+    "welcome":"Naser",
+
+    "badge":"../assets/img/badgee1.png",
+
+      "name1":"Hassan Ali Oudah",
+      "ticket":"78913",
+      "name2":"Dalal Abdulrahman",
+      "complaints":"21343",
+      "newService":"Marhaba Landline Card."
+  },
+  {
+    "id":2,
+    "password":"12345",
+
+    "email":"fatimaa@stc.com.sa",
+    "fullName":"Fatima Al Motawaa",
+    "title":"Head Of Monitoring And Controling",
+    "phone":"+966 098 344 756",
+    "control":"Market Control",
+    "img":"../assets/img/fatima2.png",
+
+    "userName":"Fatima Motawaa",
+    "welcome":"Fatima",
+
+    "badge":"../assets/img/badgee2.png",
+
+      "name1":"Mahmoud Hesham",
+      "ticket":"55654",
+      "name2":"Mariam Saad",
+      "complaints":"62625",
+      "newService":"Marhaba Landline Card."
+  },
+  {
+    "id":3,
+    "password":"1234",
+
+    "email":"maraam@stc.com.sa",
+    "fullName":"Maramm A Mahmoud",
+    "title":"Software Developer",
+    "phone":"+966 095 344 576",
+    "control":"Software Control",
+    "img":"../assets/img/fatima2.png",
+
+    "userName":"Maraam Mahmoud",
+    "welcome":"Maraam",
+
+    "badge":"../assets/img/badgee2.png",
+
+      "name1":"Ahmed Salem",
+      "ticket":"74539",
+      "name2":"Salma Wael",
+      "complaints":"99835",
+      "newService":"Marhaba Landline Card."
+  }
+]
