@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { LocalStorageService } from '../services/local-storage.service';
 import { LoginService } from '../services/login.service';
 import { Data } from '../model/app.model';
+import { ndaSign } from '../enum/nda.enum';
 
 @Component({
   selector: 'app-welcome-page',
@@ -15,33 +16,32 @@ export class WelcomePageComponent implements OnInit {
   disabledCard = true;
 
   employee!: Data;
-  
+
   hide = true;
 
+  ndaSign = ndaSign;
+
   constructor(
-    private router: Router, 
+    private router: Router,
     private loginService: LoginService,
     private localStorageService: LocalStorageService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
-    if(this.isSignedNda === true){
     this.isSignedNda = this.localStorageService.getNda();
-    }
-    //this.isSignedNda = this.localStorageService.getNda();
 
     this.loginService.acceptTerms.subscribe((res: boolean) => (this.disabledCard = res));
 
     this.loginService.hideDiv.subscribe((res: boolean) => (this.hide = res));
-    
+
     this.employee = this.localStorageService.getAccess();
   }
 
-  onSign(){
+  onSign() {
     this.router.navigate(['/terms-NDA-page']);
   }
 
-  onDashboard(){
+  onDashboard() {
     this.router.navigate(['/dashboard-page']);
   }
 }

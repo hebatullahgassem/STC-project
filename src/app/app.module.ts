@@ -17,7 +17,8 @@ import { RedeemingPolicyComponent } from './redeeming-policy/redeeming-policy.co
 import { ListComplaintsComponent } from './list-complaints/list-complaints.component';
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations'
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { CountUpDirective } from './directives/count-up.directive'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations'
     DashboardComponent,
     PointsRulesComponent,
     RedeemingPolicyComponent,
-    ListComplaintsComponent
+    ListComplaintsComponent,
+    CountUpDirective
   ],
   imports: [
     BrowserModule,

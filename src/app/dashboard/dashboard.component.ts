@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Data } from '../model/app.model';
 import { LocalStorageService } from '../services/local-storage.service';
+import { barChart, lineChart } from './graphes';
+import { legend } from '../enum/color.enum';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,133 +11,144 @@ import { LocalStorageService } from '../services/local-storage.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+  // redeemCount: number = 0;
+  // compCount: number = 0;
+  // quesCount: number = 0;
+
+  // redeemCountStop: any = setInterval(() => {
+  //   this.redeemCount++;
+  //   if(this.redeemCount === 561){
+  //     clearInterval(this.redeemCountStop);
+  //   }
+  // });
+
+  // compCountStop: any = setInterval(() => {
+  //   this.compCount++;
+  //   if(this.compCount === 2){
+  //     clearInterval(this.compCountStop);
+  //   }
+  // },500);
+
+  // quesCountStop: any = setInterval(() => {
+  //   this.quesCount++;
+  //   if(this.quesCount === 12){
+  //     clearInterval(this.quesCountStop);
+  //   }
+  // },50);
+
+
+////////////////////////////////////////
+  speed: any;
+
+  legendGroup = legend;
+
   employee!: Data;
 
- complainsData = [
-  {
-    "name": "Germany",
-    "series": [
-      {
-        "name": "2010",
-        "value": 40632,
-        "extra": {
-          "code": "de"
-        }
-      },
-      {
-        "name": "2000",
-        "value": 36953,
-        "extra": {
-          "code": "de"
-        }
-      },
-      {
-        "name": "1990",
-        "value": 31476,
-        "extra": {
-          "code": "de"
-        }
-      }
-    ]
-  },
-  {
-    "name": "United States",
-    "series": [
-      {
-        "name": "2010",
-        "value": 0,
-        "extra": {
-          "code": "us"
-        }
-      },
-      {
-        "name": "2000",
-        "value": 45986,
-        "extra": {
-          "code": "us"
-        }
-      },
-      {
-        "name": "1990",
-        "value": 37060,
-        "extra": {
-          "code": "us"
-        }
-      }
-    ]
-  },
-  {
-    "name": "France",
-    "series": [
-      {
-        "name": "2010",
-        "value": 36745,
-        "extra": {
-          "code": "fr"
-        }
-      },
-      {
-        "name": "2000",
-        "value": 34774,
-        "extra": {
-          "code": "fr"
-        }
-      },
-      {
-        "name": "1990",
-        "value": 29476,
-        "extra": {
-          "code": "fr"
-        }
-      }
-    ]
-  },
-  {
-    "name": "United Kingdom",
-    "series": [
-      {
-        "name": "2010",
-        "value": 36240,
-        "extra": {
-          "code": "uk"
-        }
-      },
-      {
-        "name": "2000",
-        "value": 32543,
-        "extra": {
-          "code": "uk"
-        }
-      },
-      {
-        "name": "1990",
-        "value": 26424,
-        "extra": {
-          "code": "uk"
-        }
-      }
-    ]
+  showdata: any; 
+
+  barChart = barChart;
+  lineChart = lineChart;
+
+  /////////bar
+  colorScheme: any = {
+    domain: ['#ffdd40', '#4f008c', '#00c48c']
+  };
+  colorScheme3: any = {
+    domain: ['#ffdd40', '#4f008c', '#00c48c']
+  };
+
+  // options
+  showXAxis: boolean = true;
+  showYAxis: boolean = true;
+  gradient: boolean = true;
+  showXAxisLabel: boolean = true;
+  xAxisLabel: string = 'Country';
+  showYAxisLabel: boolean = true;
+  yAxisLabel: string = 'Population';
+  schemeType: string = 'ordinal';
+  barPadding: number = 0;
+  roundEdges: boolean = false;
+  groupPadding: number = 26;
+  showLegend: boolean=true;
+  showDataLabel: boolean = false;
+  //roundDomain: boolean = true;
+  //background
+  //legendposition 
+
+
+  //////line
+  grid:boolean = true;
+  legend: boolean = true;
+  showLabels: boolean = true;
+  animations: boolean = true;
+  xAxis: boolean = true;
+  yAxis: boolean = true;
+  showYAxisLabel2: boolean = true;
+  showXAxisLabel2: boolean = true;
+  xAxisLabel2: string = 'Year';
+  yAxisLabel2: string = 'Population';
+  timeline: boolean = true;
+  //yaxis grid line
+
+  colorScheme2: any = {
+    domain: ['#4f008c']
   }
-];
+
+  // colorScheme3: any = {
+  //   domain: ['#ffdd40', '#4f008c', '#00c48c']
+  // }
+
 
   constructor(
     private localStorageService: LocalStorageService,
     private router: Router
-  ) { }
+  ) {}
+
+  onSelect(data: any) {
+    this.showdata = [];
+    // if(typeof data === 'string'){
+    //   if(data === this.legendGroup.opened){
+    //     this.colorScheme.domain = ['#ffdd0'];
+    //   } else if (data === 'Forwarded'){
+    //     this.colorScheme.domain = ['#4f008c'];
+    //   } else if (data === 'Closed'){
+    //     this.colorScheme.domain = ['#00c48c'];
+    //   }
+      switch(data){
+        case this.legendGroup.opened: this.colorScheme3.domain = ['#ffdd40']
+        break;
+
+        case this.legendGroup.forwarded: this.colorScheme3.domain = ['#4f008c']
+        break;
+          
+        case this.legendGroup.closed: this.colorScheme3.domain = ['#00c48c']  
+        break;
+      }
+
+      this.showdata = this.barChart.map((bar) => {
+        return  {name: bar.name, series: bar.series.filter(series => series.name === data)};
+    });
+    //console.log(this.showdata, this.barChart);
+  }
+
 
   ngOnInit() {
     this.employee = this.localStorageService.getAccess();
   }
 
-  onPoints(){
+
+
+
+  onPoints() {
     this.router.navigate(['/points-and-rules']);
   }
 
-  onRedeem(){
+  onRedeem() {
     this.router.navigate(['/redeeming-policy']);
   }
 
-  onComplaints(){
+  onComplaints() {
     this.router.navigate(['/list-of-complaints']);
   }
 }
+

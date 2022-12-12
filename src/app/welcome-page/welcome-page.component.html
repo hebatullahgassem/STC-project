@@ -67,56 +67,57 @@
 
     <div class="below-header">
       <div class="up-body">
- <div [ngSwitch]="isSignedNda">       
-        <div class="card" id="card" *ngSwitchCase="false">
-          <div class="first">
-            <h1 class="num">1</h1>
-            <div>
-              <h1 class="hedo">Accept Terms & Sign the NDA</h1>
-              <p class="peo">Read and accept the community terms and sign the NDA to know what is your rights and how to
-                protect customers' information</p>
-            </div>
-            <button class="pinko" type="button" (click)="onSign()">READ & SIGN</button>
-          </div>
-        </div>
-
-        <div class="cardos" id="cardos" *ngSwitchCase="true">
-          <div class="first">
-            <h1 class="num">1</h1>
-            <div class="woho">
+        <div [ngSwitch]="isSignedNda">
+          <div class="card" id="card" *ngSwitchCase="ndaSign.reject">
+            <div class="first">
+              <h1 class="num">1</h1>
               <div>
-                <h1 class="hedoo">Congratulations !</h1>
-                <p class="peoo">You gained 5 points</p>
-                <p class="peo3">by gain sign DNA.</p>
+                <h1 class="hedo">Accept Terms & Sign the NDA</h1>
+                <p class="peo">Read and accept the community terms and sign the NDA to know what is your rights and how
+                  to
+                  protect customers' information</p>
               </div>
-              <div><img class="wohoo" src="../assets/img/wohoo.png"></div>
+              <button class="pinko" type="button" (click)="onSign()">READ & SIGN</button>
             </div>
           </div>
-        </div>
-</div>
-<div [ngSwitch]="isSignedNda">  
-        <div class="card2" *ngSwitchCase="true">
-          <div class="first2">
-            <h1 class="num2">2</h1>
-            <div>
-              <h1 class="hedo2">Start inviting your family & friends</h1>
-              <p class="peo2">You will get 5 points for each customer you invite</p>
-            </div>
-            <button class="pinko2" type="button" [disabled]="disabledCard">INVITE</button>
-          </div>
-        </div>
 
-        <div class="diableCard" *ngSwitchCase="false">
-          <div class="first2">
-            <h1 class="num2">2</h1>
-            <div>
-              <h1 class="hedo2">Start inviting your family & friends</h1>
-              <p class="peo2">You will get 5 points for each customer you invite</p>
+          <div class="cardos" id="cardos" *ngSwitchCase="ndaSign.accept">
+            <div class="first">
+              <h1 class="num">1</h1>
+              <div class="woho">
+                <div>
+                  <h1 class="hedoo">Congratulations !</h1>
+                  <p class="peoo">You gained 5 points</p>
+                  <p class="peo3">by gain sign DNA.</p>
+                </div>
+                <div><img class="wohoo" src="../assets/img/wohoo.png"></div>
+              </div>
             </div>
-            <button class="pinko2" type="button" [disabled]="disabledCard">INVITE</button>
           </div>
         </div>
-</div>
+        <div [ngSwitch]="isSignedNda">
+          <div class="card2" *ngSwitchCase="ndaSign.accept">
+            <div class="first2">
+              <h1 class="num2">2</h1>
+              <div>
+                <h1 class="hedo2">Start inviting your family & friends</h1>
+                <p class="peo2">You will get 5 points for each customer you invite</p>
+              </div>
+              <button class="pinko2" type="button" [disabled]="disabledCard">INVITE</button>
+            </div>
+          </div>
+
+          <div class="diableCard" *ngSwitchCase="ndaSign.reject">
+            <div class="first2">
+              <h1 class="num2">2</h1>
+              <div>
+                <h1 class="hedo2">Start inviting your family & friends</h1>
+                <p class="peo2">You will get 5 points for each customer you invite</p>
+              </div>
+              <button class="pinko2" type="button" [disabled]="disabledCard">INVITE</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="down-body">
         <div class="card01">

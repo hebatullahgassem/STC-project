@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { ndaSign } from "../enum/nda.enum";
 import { Data } from '../model/app.model';
 
 @Injectable({
@@ -6,7 +7,6 @@ import { Data } from '../model/app.model';
 })
 
 export class LocalStorageService {
-  //isSignedNda: boolean = false;
 
   constructor() { }
 
@@ -18,12 +18,21 @@ export class LocalStorageService {
     return localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")!) : null;
   }
 
-  getNda(): boolean {
-    localStorage.setItem("signedNDA", JSON.stringify(true));
-    return localStorage.getItem("signedNDA") ? JSON.parse(localStorage.getItem("signedNDA")!) : true;
+  setNda2(sign: string){
+    localStorage.setItem("signedNDA", sign);
+  }
+/////////////////////////////////////////
+  // setColor(color: string){
+  //   sessionStorage.setItem("colored", color);
+  // }
+  // getColor(): any {
+  //   return sessionStorage.getItem("colored") ? sessionStorage.getItem("colored") : colorSelect;
+  // }
+//////////////////////////////////////////
+  getNda(): any {
+    return localStorage.getItem("signedNDA") ? localStorage.getItem("signedNDA") : ndaSign.reject;
   }
 
-  /////////////////////////////////////////////////////
   getCongrates() {
     localStorage.getItem("signedNDA");
   }
