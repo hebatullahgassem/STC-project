@@ -12,13 +12,13 @@ export class NumFormatDirective implements OnInit {
   ngOnInit(){
     //console.log(this.el.nativeElement.innerText.length);
     if(this.el.nativeElement){
-      let text = this.el.nativeElement.innerText.split(',');
-      text.forEach((n: any, i: number) => {
-        if(!isNaN(n)){
-          text[i] = parseInt(text[i]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      let text = this.el.nativeElement.innerText.split(' '); //split words
+      text.forEach((t: any, n: number) => {
+        if(!isNaN(t)){
+          text[n] = parseInt(text[n]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
         }
       });
-      text = text.join(',');
+      text = text.join(' '); //separate each element in array(each word) with join
       this.renderer.setProperty(this.el.nativeElement, 'innerHTML', text);
     }
   }
