@@ -90,12 +90,12 @@
           </div>
           <div class="bordery1">
             <p class="one"><span class="boldy">{{employee.name1}}</span> have added an answer for your question in
-              ticket <span>{{employee.ticket}}</span> in the community.</p>
+              ticket <span appNumFormat>78913</span> in the community.</p>
             <a class="anchor">VIEW THE ANSWER</a>
           </div>
           <div class="bordery2">
             <p class="one"><span class="boldy">{{employee.name2}}</span> have marked complaints
-              <span>{{employee.complaints}}</span> as resolved.
+              <span appNumFormat>21343</span> as resolved.
             </p>
             <a class="anchor">INFORM CUSTOMER</a>
           </div>
@@ -112,7 +112,7 @@
                 <p class="ppp">Un-redeemed Points</p>
                 <img class="logo1" src="../assets/img/redeeming-logo.png">
               </div>
-              <h1 class="num" [appCountUp]="561" [speed]="1"></h1>
+              <h1 class="num" [appCountUp]="561" [speed]="'high'"></h1>
               <a class="linky" (click)="onRedeem()">REDEEMING POLICY</a>
             </div>
             <div class="cardo">
@@ -120,7 +120,7 @@
                 <p class="ppp">In progress Complaints</p>
                 <img class="logo2" src="../assets/img/complaints-logo.png">
               </div>
-              <h1 class="num" [appCountUp]="2" [speed]="1000"></h1>
+              <h1 class="num" [appCountUp]="2" [speed]="'low'"></h1>
               <a class="linky" (click)="onComplaints()">LIST ALL COMPLAINTS</a>
             </div>
           </div>
@@ -129,7 +129,7 @@
               <p class="ppp">Unanswered questions</p>
               <img class="logo3" src="../assets/img/community-logo.png">
             </div>
-            <h1 class="num" [appCountUp]="12" [speed]="100"></h1>
+            <h1 class="num" [appCountUp]="12" [speed]="'medium'"></h1>
             <a class="linky">COMMUNITY</a>
           </div>
         </div>

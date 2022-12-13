@@ -18,7 +18,8 @@ import { ListComplaintsComponent } from './list-complaints/list-complaints.compo
 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { CountUpDirective } from './directives/count-up.directive'
+import { CountUpDirective } from './directives/count-up.directive';
+import { NumFormatDirective } from './directives/num-format.directive'
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CountUpDirective } from './directives/count-up.directive'
     PointsRulesComponent,
     RedeemingPolicyComponent,
     ListComplaintsComponent,
-    CountUpDirective
+    CountUpDirective,
+    NumFormatDirective
   ],
   imports: [
     BrowserModule,

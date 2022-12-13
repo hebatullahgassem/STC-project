@@ -11,33 +11,7 @@ import { legend } from '../enum/color.enum';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  // redeemCount: number = 0;
-  // compCount: number = 0;
-  // quesCount: number = 0;
 
-  // redeemCountStop: any = setInterval(() => {
-  //   this.redeemCount++;
-  //   if(this.redeemCount === 561){
-  //     clearInterval(this.redeemCountStop);
-  //   }
-  // });
-
-  // compCountStop: any = setInterval(() => {
-  //   this.compCount++;
-  //   if(this.compCount === 2){
-  //     clearInterval(this.compCountStop);
-  //   }
-  // },500);
-
-  // quesCountStop: any = setInterval(() => {
-  //   this.quesCount++;
-  //   if(this.quesCount === 12){
-  //     clearInterval(this.quesCountStop);
-  //   }
-  // },50);
-
-
-////////////////////////////////////////
   speed: any;
 
   legendGroup = legend;
@@ -71,9 +45,6 @@ export class DashboardComponent implements OnInit {
   groupPadding: number = 26;
   showLegend: boolean=true;
   showDataLabel: boolean = false;
-  //roundDomain: boolean = true;
-  //background
-  //legendposition 
 
 
   //////line
