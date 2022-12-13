@@ -11,15 +11,10 @@ import { legend } from '../enum/color.enum';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
   speed: any;
-
   legendGroup = legend;
-
   employee!: Data;
-
   showdata: any; 
-
   barChart = barChart;
   lineChart = lineChart;
 
@@ -46,7 +41,6 @@ export class DashboardComponent implements OnInit {
   showLegend: boolean=true;
   showDataLabel: boolean = false;
 
-
   //////line
   grid:boolean = true;
   legend: boolean = true;
@@ -64,11 +58,6 @@ export class DashboardComponent implements OnInit {
   colorScheme2: any = {
     domain: ['#4f008c']
   }
-
-  // colorScheme3: any = {
-  //   domain: ['#ffdd40', '#4f008c', '#00c48c']
-  // }
-
 
   constructor(
     private localStorageService: LocalStorageService,
