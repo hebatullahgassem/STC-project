@@ -20,7 +20,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CountUpDirective } from './directives/count-up.directive';
 import { NumFormatDirective } from './directives/num-format.directive';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './shared/layout/navbar.component';
 
 @NgModule({
   declarations: [

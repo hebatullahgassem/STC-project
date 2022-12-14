@@ -7,16 +7,22 @@ import { ListComplaintsComponent } from './list-complaints/list-complaints.compo
 import { LoginComponent } from './login/login.component';
 import { PointsRulesComponent } from './points-rules/points-rules.component';
 import { RedeemingPolicyComponent } from './redeeming-policy/redeeming-policy.component';
+import { NavbarComponent } from './shared/layout/navbar.component';
 import { TermsComponent } from './terms/terms.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+
 const routes: Routes = [
   {path: '', redirectTo: '/home-page', pathMatch: 'full'},
   {path: 'home-page', component: HomeComponent},
   {path: 'login-page', component: LoginComponent},
   {path: 'access-page', component: AccessStcComponent},
-  {path: 'welcome-page', component: WelcomePageComponent},
-  {path: 'terms-NDA-page', component: TermsComponent},
-  {path: 'dashboard-page', component: DashboardComponent},
+  {path: '', component: NavbarComponent, 
+  children: [
+    {path: 'welcome-page', component: WelcomePageComponent},
+    {path: 'terms-NDA-page', component: TermsComponent},
+    {path: 'dashboard-page', component: DashboardComponent}
+  ]
+},
   {path: 'points-and-rules', component: PointsRulesComponent},
   {path: 'redeeming-policy', component: RedeemingPolicyComponent},
   {path: 'list-of-complaints', component: ListComplaintsComponent}
