@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Data } from 'src/app/model/app.model';
-import { LocalStorageService } from 'src/app/services/local-storage.service';
+import { Data } from '../model/app.model';
+import { LocalStorageService } from '../services/local-storage.service';
 
 @Component({
   selector: 'app-navbar',
