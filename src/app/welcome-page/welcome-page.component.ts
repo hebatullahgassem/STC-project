@@ -41,7 +41,4 @@ export class WelcomePageComponent implements OnInit {
     this.router.navigate(['/terms-NDA-page']);
   }
 
-  onDashboard() {
-    this.router.navigate(['/dashboard-page']);
-  }
 }

@@ -3,31 +3,6 @@
 }
 
 
-.widtho{
-  width: 12rem;
-  height: 100%;
-  background-color: #2b004c;
-}
-
-.icon{
-  height: 1rem;
-  margin-left: 0.7rem;
-  margin-right: 0.3rem;
-}
-.nav-link.align-middle.px-0{
-  cursor: pointer;
-}
-.ms-1.d-none.d-sm-inline{
-  color: #aa99b7;
-}
-.nav.nav-pills.flex-column.mb-sm-auto.mb-0.align-items-center.align-items-sm-start{
-  margin-top: 2rem;
-}
-.ms-1.d-none.d-sm-inline{
-  font-size: 0.8rem;
-}
-
-
 .header{
   display: flex;
   background-color: #4f008c;

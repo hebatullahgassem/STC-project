@@ -21,8 +21,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CountUpDirective } from './directives/count-up.directive';
 import { NumFormatDirective } from './directives/num-format.directive';
 import { LayoutOneComponent } from './layout-one/layout-one.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { LayoutTwoComponent } from './layout-two/layout-two.component';
 
 @NgModule({
   declarations: [
@@ -39,8 +40,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     CountUpDirective,
     NumFormatDirective,
     LayoutOneComponent,
+    NavbarComponent,
     SidenavComponent,
-    NavbarComponent
+    LayoutTwoComponent
   ],
   imports: [
     BrowserModule,

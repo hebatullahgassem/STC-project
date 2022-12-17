@@ -1,0 +1,31 @@
+.widtho{
+  width: 12rem;
+}
+.sidenav{
+  background-color: #2b004c;
+  height: 100%;
+}
+.icon{
+  height: 1rem;
+  margin-left: 0.7rem;
+  margin-right: 0.3rem;
+}
+.nav-link.align-middle.px-0{
+  cursor: pointer;
+}
+.ms-1.d-none.d-sm-inline{
+  color: #aa99b7;
+}
+.nav.nav-pills.flex-column.mb-sm-auto.mb-0.align-items-center.align-items-sm-start{
+  margin-top: 2rem;
+}
+.ms-1.d-none.d-sm-inline{
+  font-size: 0.8rem;
+}
+
+
+.dashboard{
+  background-color: #22003d;
+  border-left: 5px solid #ff375e;
+  width: 175px;
+}
