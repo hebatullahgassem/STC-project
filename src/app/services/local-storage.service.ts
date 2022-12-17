@@ -21,16 +21,11 @@ export class LocalStorageService {
   setNda2(sign: string){
     localStorage.setItem("signedNDA", sign);
   }
-/////////////////////////////////////////
-  // setColor(color: string){
-  //   sessionStorage.setItem("colored", color);
-  // }
-  // getColor(): any {
-  //   return sessionStorage.getItem("colored") ? sessionStorage.getItem("colored") : colorSelect;
-  // }
-//////////////////////////////////////////
   getNda(): any {
     return localStorage.getItem("signedNDA") ? localStorage.getItem("signedNDA") : ndaSign.reject;
+  }
+  getNda2(): any {
+    return localStorage.getItem("signedNDA") ? localStorage.getItem("signedNDA") : ndaSign.accept;
   }
 
   getCongrates() {

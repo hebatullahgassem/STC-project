@@ -2,12 +2,20 @@
   <div class="widtho">
     <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
       <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-        <li>
-          <a class="nav-link align-middle px-0">
-            <img class="icon" src="../assets/img/dashboard.png"><span class="ms-1 d-none d-sm-inline"
-              (click)="onDashboard()">My Dashboard</span>
-          </a>
-        </li>
+          <li *ngIf="!isDashboard">
+            <a class="nav-link align-middle px-0">
+              <img class="icon" src="../assets/img/dashboard.png"><span class="ms-1 d-none d-sm-inline"
+                (click)="onDashboard()">My Dashboard</span>
+            </a>
+          </li>
+  
+          <li class="dashboard" *ngIf="isDashboard">
+            <a class="nav-link align-middle px-0">
+              <img class="icon" src="../assets/img/dashboard.png"><span class="ms-1 d-none d-sm-inline"
+                (click)="onDashboard()">My Dashboard</span>
+            </a>
+          </li>
+  
         <li>
           <a data-bs-toggle="collapse" class="nav-link px-0 align-middle">
             <img class="icon" src="../assets/img/customers.png"><span class="ms-1 d-none d-sm-inline">My
